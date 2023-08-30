@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <title>Inventario</title>
+</head>
+<body>
+  <h1 class="dark-text">Administrador de Inventario</h1>
+
+  <div class="dark-background">
+    <h2 class="dark-text">Buscar Producto</h2>
+    <input type="text" id="searchInput" placeholder="Nombre del producto">
+    <button id="buscarproducto">Buscar</button>
+  </div>
+
+  <div class="dark-background">
+    <h2 class="dark-text">Agregar Stock</h2>
+    <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+    <input type="number" id="precioProducto" placeholder="Precio">
+    <input type="number" id="cantidadProducto" placeholder="Cantidad">
+    <button id="addStock">Agregar</button>
+  </div>
+
+
+  <div class="dark-background">
+    <h2 class="dark-text">Inventario</h2>
+    <ul id="inventarioList" class="inventario-list"></ul>
+    <p id="totalInventario">Total del inventario: $0.00</p>
+  </div>
+  
+
+  <script src="./JS/main.js"></script>
+</body>
+</html>
